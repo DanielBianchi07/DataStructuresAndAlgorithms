@@ -2,7 +2,7 @@ using System.Collections;
 
 namespace DataStructures.Collections;
 
-public class Collection : CollectionBase
+public class Collections : CollectionBase
 {
     // método de adicionar no ArrayList
     public void Add(Object item)

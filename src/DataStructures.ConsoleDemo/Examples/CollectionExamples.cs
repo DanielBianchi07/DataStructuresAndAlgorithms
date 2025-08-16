@@ -9,7 +9,7 @@ public class CollectionExamples
         Console.WriteLine("---------------------------------");
         Console.WriteLine("------ CollectionExamples -------");
         
-        var names = new Collection();
+        var names = new Collections.Collections();
         
         names.Add("David");
         names.Add("Bernica");
@@ -35,7 +35,7 @@ public class CollectionExamples
         Console.WriteLine("num1: " + num1);
         Console.WriteLine("num2: " + num2);
         
-        Collection.Swap<int>(ref num1, ref num2);
+        Collections.Collections.Swap<int>(ref num1, ref num2);
         
         Console.WriteLine("num1: " + num1);
         Console.WriteLine("num2: " + num2);
@@ -46,14 +46,14 @@ public class CollectionExamples
         Console.WriteLine("str1: " + str1);
         Console.WriteLine("str2: " + str2);
         
-        Collection.Swap<string>(ref str1, ref str2);
+        Collections.Collections.Swap<string>(ref str1, ref str2);
 
         Console.WriteLine("str1: " + str1);
         Console.WriteLine("str2: " + str2);
         
         Console.WriteLine("--------------------------------");
 
-        Collection.Node<string> node1 = new Collection.Node<string>("Mike", null);
-        Collection.Node<string> node2 = new Collection.Node<string>("Raymond", node1);
+        Collections.Collections.Node<string> node1 = new Collections.Collections.Node<string>("Mike", null);
+        Collections.Collections.Node<string> node2 = new Collections.Collections.Node<string>("Raymond", node1);
     }
 }
